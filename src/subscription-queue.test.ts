@@ -1,7 +1,7 @@
 import { expect, test } from '@jest/globals';
 import { Observable, Subject, Subscription, tap } from 'rxjs';
 import { SubscriptionQueue, subscriptionQueue } from './subscription-queue';
-import { MultiSubject } from './multi-subject';
+import { MultiSubject } from 'rxjs-multi-subject';
 
 test('with multiple observables', () => {
   const queue: SubscriptionQueue = subscriptionQueue();
