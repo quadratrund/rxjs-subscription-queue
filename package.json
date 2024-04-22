@@ -15,6 +15,7 @@
     "type": "git",
     "url": "https://github.com/quadratrund/rxjs-subscription-queue.git"
   },
+  "keywords": ["RxJS", "Observables"],
   "dependencies": {
     "rxjs": "^7.3.0 || ^8.0.0"
   },
