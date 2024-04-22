@@ -6,6 +6,9 @@ previous Subscription ends.
 ## Example Usages
 ### with multiple observables
 ```ts
+import { timer } from 'rxjs';
+import { SubscriptionQueue, subscriptionQueue } from './subscription-queue';
+
 const queue: SubscriptionQueue = subscriptionQueue();
 queue.queueLengthObservable.subscribe((queueLength: number) => console.log('queueLength: ' + queueLength));
 
@@ -30,6 +33,9 @@ timer(200).pipe(tap({ subscribe: () => console.log('start waiting for 200ms') })
 ```
 ### subscribing multiple times
 ```ts
+import { timer } from 'rxjs';
+import { SubscriptionQueue, subscriptionQueue } from './subscription-queue';
+
 const queue: SubscriptionQueue = subscriptionQueue();
 queue.queueLengthObservable.subscribe((queueLength: number) => console.log('queueLength: ' + queueLength));
 const observable = timer(100).pipe(
