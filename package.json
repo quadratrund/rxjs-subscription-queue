@@ -1,7 +1,7 @@
 {
   "name": "rxjs-subscription-queue",
   "version": "1.0.0",
-  "description": "Subscription Queue",
+  "description": "The SubscriptionQueue is a locking mechanism for RxJS Observables.",
   "main": "index.js",
   "scripts": {
     "build": "rm -r build ; tsc && tsc -p tsconfig.esm.json && cp package.json README.md LICENSE.txt build",
@@ -16,7 +16,7 @@
     "url": "https://github.com/quadratrund/rxjs-subscription-queue.git"
   },
   "dependencies": {
-    "rxjs": "^7.8.1"
+    "rxjs": "^7.3.0 || ^8.0.0"
   },
   "devDependencies": {
     "rxjs-multi-subject": "^0.0.2",
