@@ -4,7 +4,7 @@
   "description": "Subscription Queue",
   "main": "index.js",
   "scripts": {
-    "build": "rm -r build ; tsc && tsc -p tsconfig.esm.json && cp package.json build",
+    "build": "rm -r build ; tsc && tsc -p tsconfig.esm.json && cp package.json README.md LICENSE.txt build",
     "test": "jest",
     "tsc": "tsc"
   },
